@@ -83,6 +83,13 @@
                                     <action selector="imageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bij-FN-Jim"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Press on the animal for more information!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPB-oz-uBA">
+                                <rect key="frame" x="0.0" y="733" width="393" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -90,6 +97,7 @@
                     <connections>
                         <outlet property="buttonOutlet" destination="mcz-UT-z21" id="jf9-4f-tKE"/>
                         <outlet property="greenButtonOutlet" destination="GJb-iw-COj" id="r5f-19-h6S"/>
+                        <outlet property="labelHelpOutlet" destination="hPB-oz-uBA" id="TLp-Ed-RdJ"/>
                         <outlet property="labelOutlet" destination="VLC-QZ-GpN" id="Krr-Y6-21d"/>
                         <outlet property="orangeButtonOutlet" destination="QhU-3A-bCD" id="cfS-F0-mA4"/>
                         <outlet property="paperOutlet" destination="FRX-hF-itx" id="a2F-Cr-74Q"/>

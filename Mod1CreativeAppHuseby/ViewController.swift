@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var peopleOutlet: UITextField!
     
+    @IBOutlet weak var labelHelpOutlet: UILabel!
     @IBOutlet weak var orangeButtonOutlet: UIButton!
     
     @IBOutlet weak var greenButtonOutlet: UIButton!
@@ -51,6 +52,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func divideAction(_ sender: Any) {
         paperOutlet.resignFirstResponder()
         peopleOutlet.resignFirstResponder()
+        labelHelpOutlet.isHidden = false
         if let blah = Int(paperOutlet.text!), let blah2 = Int(peopleOutlet.text!){
             if (blah > 0) && ( blah2 > 0) && (blah2<=10){
                 AppData.animal = 4
@@ -84,6 +86,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func multiplyAction(_ sender: Any) {
         paperOutlet.resignFirstResponder()
         peopleOutlet.resignFirstResponder()
+        labelHelpOutlet.isHidden = false
         if let blah = Int(paperOutlet.text!), let blah2 = Int(peopleOutlet.text!){
             if (blah > 0) && (blah2 > 0) && (blah2<=10){
                 AppData.animal = 3
